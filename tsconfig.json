@@ -1,0 +1,12 @@
+{
+  "extends": "astro/tsconfigs/strict",
+  "compilerOptions": {
+    "baseUrl": "C:/Users/quint/OneDrive/Documentos/projects/portfolio",
+    "paths": {
+      "@/*": ["src/*"],
+      "@/components": ["src/components/*"],
+      "@/icons": ["src/icons/*"],
+      "@/lib": ["src/lib/*"]
+    }
+  }
+}
