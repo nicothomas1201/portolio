@@ -1,0 +1,31 @@
+---
+interface Props {
+  name: string
+  url: string
+  description: string
+  stars: string
+}
+
+const { name, url, description } = Astro.props
+---
+
+<li class="card">
+  <a href={url}>
+    <h2>
+      {name}
+    </h2>
+    <p>
+      {description}
+    </p>
+  </a>
+</li>
+
+<style>
+  .card {
+    border-block-end: 1px solid #4646467a;
+    a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+  }
+</style>

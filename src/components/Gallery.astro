@@ -19,10 +19,13 @@
 
 <style>
   .grid-container {
+    inline-size: 100%;
+    block-size: auto;
+    aspect-ratio: 750 / 924;
     margin-block: 16px;
     display: grid;
-    grid-template-columns: repeat(2, minmax(300px, 1fr));
-    grid-template-rows: repeat(3, 300px);
+    grid-template-columns: repeat(2, minmax(auto, 1fr));
+    grid-template-rows: repeat(3, minmax(auto, 300px));
     grid-gap: 12px;
     grid-template-areas: 'img1 img2' 'img3 img2' 'img3 img4';
   }
